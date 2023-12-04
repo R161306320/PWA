@@ -61,3 +61,32 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Formulario enviado');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const educationItems = document.querySelectorAll('.education-item');
+    const modals = document.querySelectorAll('.modal');
+    const closeModalButtons = document.querySelectorAll('.close-modal');
+
+    educationItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const modalId = this.getAttribute('data-modal-target');
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'flex';
+        });
+    });
+
+    closeModalButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = this.closest('.modal');
+            modal.style.display = 'none';
+        });
+    });
+
+    modals.forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+    });
+});
