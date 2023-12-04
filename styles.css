@@ -111,7 +111,32 @@ section p {
     line-height: 1.6;
 }
 
-/* ... */
+/* Estilo seccion education */
+#education {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.education-item:hover {
+    background-color: #e0e0e0;
+}
+
+.education-item h3,
+.education-item p {
+    margin: 0;
+    color: #333;
+}
+
+.show-details h3,
+.show-details p {
+    color: #007bff;
+}
 
 /* Estilos para la galería de proyectos */
 .project-gallery {
