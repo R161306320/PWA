@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-+d9VuEXk6P6L1e4XNebL2R1fy7gtIvaaV4Qs3wF1VeDvL98VJxQ1f6UqLPquCOcz0F1sEviI9eWoT27t/VGTCw==" crossorigin="anonymous" />
+    <script src="script.js" defer></script>
+    <title>Juan de Dios Orona Vazquez - Portafolio</title>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch((error) => {
+              console.error('Error al registrar el Service Worker:', error);
+            });
+        }
+      </script>
+</head>
+<body>
+
+    <header>
+        <header>
+            <!-- Agrega una etiqueta de imagen con la ruta de tu imagen -->
+            <img src="img/user.png" alt="">
+            <h1>Juan de Dios Orona Vazquez</h1>
+            <p>Desarrollador Web</p>
+        </header>
+        <nav>
+    <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+</nav>
+    </header>
+        <br>
+        <br>
+    <main>
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Juan, un apasionado desarrollador web con un enfoque creativo y soluciones técnicas. Mi experiencia abarca el desarrollo front-end y back-end, donde he trabajado con tecnologías como HTML, CSS, JavaScript, Node.js y más.</p>
+            <p>Me apasiona la creación de experiencias web intuitivas y atractivas que hacen que los usuarios se enamoren de la tecnología. Mi enfoque es siempre aprender y mejorar, manteniéndome actualizado con las últimas tendencias en desarrollo web.</p>
+            <p>Cuando no estoy codificando, disfruto explorar nuevas tecnologías, contribuir a proyectos de código abierto y compartir conocimientos a través de mi blog. ¡Estoy emocionado de llevar mi creatividad y habilidades técnicas a tu próximo proyecto!</p>
+        </section>
+        <!-- Resto de las secciones... -->
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project-gallery">
+                <div class="project-card">
+                    <img src="img/proyecto1.png" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Otra descripción breve del proyecto. Destaca elementos clave y aprendizajes obtenidos.</p>
+                    <a href="enlace-proyecto2" target="_blank">Ver proyecto</a>
+                </div>
+                <div class="project-card">
+                    <img src="img/proyecto2.png" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Otra descripción breve del proyecto. Destaca elementos clave y aprendizajes obtenidos.</p>
+                    <a href="enlace-proyecto2" target="_blank">Ver proyecto</a>
+                </div>
+                <!-- Agrega más proyectos según sea necesario -->
+            </div>
+            <!-- Aquí puedes listar tus proyectos con enlaces, descripciones, etc. -->
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skill-container">
+                <div class="skill">
+                    <img src="img/html5.svg" alt="HTML" width="150" height="150">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="img/css3-alt.svg" alt="CSS" width="100" height="100">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="img/js.svg" alt="CSS" width="100" height="100">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="img/node.svg" alt="CSS" width="100" height="100">
+                    <p>CSS</p>
+                </div>
+                <!-- Agrega más habilidades según sea necesario -->
+            </div>
+        </section>    
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¡Hablemos! Estoy disponible para colaboraciones y nuevas oportunidades.</p>
+            <div class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu Nombre">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tunombre@example.com">
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí"></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2023 Juan de Dios Orona Vazquez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
