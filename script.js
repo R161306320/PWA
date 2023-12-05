@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const educationItems = document.querySelectorAll('.education-item');
-    const modals = document.querySelectorAll('.modal');
     const closeModalButtons = document.querySelectorAll('.close-modal');
 
     educationItems.forEach(item => {
@@ -77,16 +76,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     closeModalButtons.forEach(button => {
         button.addEventListener('click', function() {
-            const modal = this.closest('.modal');
+            const modalId = this.getAttribute('data-modal-close');
+            const modal = document.getElementById(modalId);
             modal.style.display = 'none';
         });
     });
-
-    modals.forEach(modal => {
-        modal.addEventListener('click', function(e) {
-            if (e.target === this) {
-                this.style.display = 'none';
-            }
-        });
-    });
 });
+
