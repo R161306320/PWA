@@ -1,7 +1,7 @@
 {
-    "name": "Mi Portafolio",
+    "name": "Mi Portafolio PWA",
     "short_name": "Portafolio",
-    "description": "Descripción de mi portafolio",
+    "description": "En este Portafolio se vera informacion sobre mi persona",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

@@ -7,7 +7,8 @@ const urlsToCache = [
   '/styles.css',
   '/script.js',
   '/icon.png',
-  // Agrega más URLs según tu proyecto
+  '/img/css-3alt.svg'
+
 ];
 self.addEventListener('install', (event) => {
     event.waitUntil(
